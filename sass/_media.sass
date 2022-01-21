@@ -25,9 +25,25 @@
         max-width: 576px
         width: 92%
     .navbar
-        &__search
+        &__search,&__user,&-bottom
             display: none
-        &-bottom
-            display: none
-    .user
-        display: none
+        &-top
+            padding: 28px 0
+    .menu
+        &-btn
+            display: flex
+            align-items: center
+            flex-direction: column
+            justify-content: space-between
+            height: 11px
+            margin: 0
+            padding: 0
+            border: none
+            cursor: pointer
+            &__line
+                width: 16px
+                height: 1px
+                background-color: #333333
+    .logo
+        &__img
+            width: 99px
