@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&family=Nunito:wght@400;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -105,10 +106,31 @@
                 <!-- /.hotel-info__rating -->
             </div>
             <!-- /.hotel-info -->
+            <div class="hotel-grid">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="css/img/slide.jfif" alt="slide"></div>
+                        <div class="swiper-slide"><img src="css/img/slide.jfif" alt="slide"></div>
+                        <div class="swiper-slide"><img src="css/img/slide.jfif" alt="slide"></div>
+                        ...
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <button class="swiper-button swiper-button--prev"></button>
+                    <button class="swiper-button swiper-button--next"></button>
+                    <!-- /.swiper-container -->
+                </div>
+                <!-- /.swiper -->
+            </div>
+            <!-- /.hotel-grid -->
         </div>
         <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
