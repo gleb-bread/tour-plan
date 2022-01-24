@@ -176,7 +176,7 @@ img {
 }
 
 .hotel {
-  padding-top: 15px;
+  padding-top: 20px;
   padding-bottom: 70px;
 }
 
@@ -232,6 +232,9 @@ img {
 }
 
 .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -239,6 +242,10 @@ img {
 .stars__img {
   width: 8px;
   height: 8px;
+}
+
+.stars__img:not(:last-child) {
+  margin-right: 2px;
 }
 
 .rating {

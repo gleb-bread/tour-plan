@@ -1,5 +1,5 @@
 .hotel
-    padding-top: 15px
+    padding-top: 20px
     padding-bottom: 70px
     &-info
         display: flex
@@ -30,10 +30,13 @@
     border-radius: 3px
     color: #ffffff
 .stars
+    display: flex
     flex-basis: 100%
     &__img
         width: 8px
         height: 8px
+        &:not(:last-child)
+            margin-right: 2px
 .rating
     max-width: 65px
     min-height: 45px
