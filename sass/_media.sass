@@ -1,6 +1,12 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
+    .swiper
+        width: 590px
+        &-slide
+            &__img
+                height: 100%
+                object-fit: cover
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -26,6 +32,17 @@
     .swiper
         width: 100%
         height: 450px
+    .hotel
+        &-grid
+            flex-direction: column
+        &__swiper
+            margin-bottom: 30px
+        &__right-wrapper
+            flex-direction: row
+    .booking
+        width: 340px
+    .map
+        width: 340px
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -68,13 +85,21 @@
         flex-basis: auto
     .swiper
         width: 100%
-        height: 320px
+        height: 350px
         &-button
             background-size: 8px
             &--next
                 right: 9px
             &--prev
                 left: 9px
+    .hotel
+        &__right-wrapper
+            flex-direction: column
+            min-height: 450px
+    .booking
+        width: 100%
+    .map
+        width: 100%
 @media (max-width: 576px)
     .navbar
         &-top
@@ -84,6 +109,7 @@
     .swiper
         width: 100%
         height: 240px
+        margin-bottom: 20px
         &-button
             background-size: 6px
             &--next
