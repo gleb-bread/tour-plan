@@ -35,12 +35,16 @@
     .hotel
         &-grid
             flex-direction: column
-        &__swiper
+        &-swiper
             margin-bottom: 30px
-        &__right-wrapper
+        &-right-wrapper
             flex-direction: row
+            justify-content: space-between
     .booking
         width: 340px
+        height: 210px
+        margin-bottom: 0
+        margin-right: 20px
     .map
         width: 340px
     .newsletter
@@ -70,6 +74,7 @@
                 height: 1px
                 background-color: #333333
     .hotel
+        padding-bottom: 40px
         &-wrapper
             justify-content: space-between
         &-info
@@ -95,11 +100,15 @@
             &--prev
                 left: 9px
     .hotel
-        &__right-wrapper
+        &-right-wrapper
             flex-direction: column
-            min-height: 450px
+            width: 100%
+        &-info
+            padding-bottom: 40px
     .booking
         width: 100%
+        margin-right: 0
+        margin-bottom: 20px
     .map
         width: 100%
 @media (max-width: 576px)
