@@ -229,9 +229,12 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.hotel__right-wrapper {
+.hotel-right-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,6 +245,55 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 450px;
+}
+
+.hotel-swiper {
+  width: 728px;
+  height: 450px;
+  position: relative;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.hotel-swiper::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 10;
+}
+
+.hotel-swiper__button {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: transparent;
+  z-index: 100;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+
+.hotel-swiper__button--next {
+  right: 18px;
+  background-image: url(../../css/img/arrow-next.svg);
+}
+
+.hotel-swiper__button--prev {
+  left: 18px;
+  background-image: url(../../css/img/arrow-prev.svg);
 }
 
 .offer {
@@ -277,64 +329,17 @@ img {
   color: #fff;
   background-color: #EC1F46;
   border-radius: 4px;
+  overflow: hidden;
 }
 
-.rating__text {
+.rating-text {
   font-size: 8px;
   line-height: 10px;
 }
 
-.rating__counter {
+.rating-counter {
   font-size: 14px;
   line-height: 18px;
-}
-
-.swiper {
-  width: 728px;
-  height: 450px;
-  position: relative;
-  border-radius: 8px;
-  margin: 0;
-}
-
-.swiper::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  z-index: 10;
-}
-
-.swiper-button {
-  position: absolute;
-  top: 50%;
-  width: 30px;
-  height: 30px;
-  border: none;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-color: transparent;
-  z-index: 100;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
-}
-
-.swiper-button--next {
-  right: 18px;
-  background-image: url(../../css/img/arrow-next.svg);
-}
-
-.swiper-button--prev {
-  left: 18px;
-  background-image: url(../../css/img/arrow-prev.svg);
 }
 
 .booking {
