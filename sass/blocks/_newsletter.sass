@@ -27,10 +27,11 @@
         display: flex
         flex-direction: column
         color: $light
-        font-weight: 300
+        font-weight: 200
         font-size: 24px
         line-height: 30px
         &__strong
+            font-style: normal
             font-weight: 600
             font-size: 36px
             line-height: 45px
@@ -48,9 +49,13 @@
         border: none
         padding-left: 33px
         padding-right: 75px
+        font-family: Mulish
+        font-style: normal
         font-weight: 300
         font-size: 14px
         line-height: 18px
+        &::placeholder
+            color: #BDBDBD
     &__button
         position: absolute
         right: 0
@@ -60,3 +65,8 @@
         border: none
         background-color: $primary-color
         color: $light
+        font-family: Mulish
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
