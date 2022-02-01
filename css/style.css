@@ -175,6 +175,7 @@ sub {
   margin: 0;
   padding: 18px 0;
   list-style: none;
+  padding-left: 9px;
 }
 
 .breadcrumb-list__item {
@@ -195,6 +196,7 @@ sub {
 .hotel {
   padding-top: 24px;
   padding-bottom: 70px;
+  padding-left: 13px;
 }
 
 .hotel-info {
@@ -1545,8 +1547,14 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .breadcrumb-list {
+    padding-top: 21px;
+  }
   .hotel {
+    padding-top: 0;
     padding-bottom: 40px;
+    -webkit-transform: translateX(-4px);
+            transform: translateX(-4px);
   }
   .hotel-wrapper {
     -webkit-box-pack: justify;
@@ -1569,6 +1577,7 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-top: 10px;
+    white-space: nowrap;
   }
   .stars {
     -ms-flex-preferred-size: auto;
