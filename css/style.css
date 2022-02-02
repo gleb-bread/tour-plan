@@ -46,7 +46,7 @@ sub {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 44px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -61,7 +61,6 @@ sub {
 
 .navbar-bottom {
   background-color: #0A223D;
-  padding-left: 14px;
 }
 
 .navbar-menu {
@@ -75,8 +74,12 @@ sub {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 31px;
+  padding-left: 0;
   list-style: none;
+  -webkit-transform: translateX(9px);
+          transform: translateX(9px);
 }
 
 .navbar-menu__link {
@@ -181,7 +184,8 @@ sub {
   margin: 0;
   padding: 18px 0;
   list-style: none;
-  padding-left: 9px;
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
 }
 
 .breadcrumb-list__item {
@@ -191,7 +195,7 @@ sub {
 
 .breadcrumb-list__item:not(:last-child)::after {
   content: '/';
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
 .breadcrumb-list__link {
@@ -202,7 +206,8 @@ sub {
 .hotel {
   padding-top: 24px;
   padding-bottom: 70px;
-  padding-left: 13px;
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
 }
 
 .hotel-info {
@@ -220,7 +225,7 @@ sub {
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 9px;
+  margin-top: 5px;
 }
 
 .hotel-info__name {
@@ -234,6 +239,10 @@ sub {
   margin: 0;
   font-size: 12px;
   line-height: 15px;
+}
+
+.hotel-info__description--space {
+  display: none;
 }
 
 .hotel-wrapper {
@@ -273,11 +282,13 @@ sub {
 }
 
 .hotel-swiper {
-  width: 728px;
+  width: 729px;
   height: 450px;
   position: relative;
   border-radius: 8px;
   margin: 0;
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
 }
 
 .hotel-swiper__item {
@@ -329,12 +340,10 @@ sub {
 .offer {
   font-size: 10px;
   line-height: 13px;
-  padding: 4px 9px;
+  padding: 4px 10px;
   background-color: #EC1F46;
   border-radius: 3px;
   color: #ffffff;
-  -webkit-transform: translateX(3px);
-          transform: translateX(3px);
 }
 
 .stars {
@@ -367,6 +376,7 @@ sub {
 .rating-text {
   font-size: 8px;
   line-height: 10px;
+  font-weight: 100;
 }
 
 .rating__counter {
@@ -441,8 +451,8 @@ sub {
   font-weight: 200;
   font-size: 12px;
   line-height: 16px;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
 }
 
 .booking__room {
@@ -520,7 +530,7 @@ sub {
 
 .booking__button {
   width: 100%;
-  min-height: 45px;
+  min-height: 44px;
   font-family: Nunito, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -1494,6 +1504,13 @@ template {
   }
   .hotel {
     padding-bottom: 55px;
+    padding-top: 23px;
+  }
+  .hotel-info__offer {
+    margin-top: 4px;
+  }
+  .hotel-info__description--space {
+    display: inline;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -1503,6 +1520,8 @@ template {
   }
   .hotel-swiper {
     margin-bottom: 30px;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
   .hotel-right-wrapper {
     -webkit-box-orient: horizontal;
@@ -1533,8 +1552,15 @@ template {
     height: 210px;
     margin-bottom: 0;
     margin-right: 20px;
-    padding-top: 24px;
-    padding-right: 20px;
+    padding-top: 25px;
+    padding-left: 23px;
+    padding-right: 22px;
+  }
+  .booking__button {
+    min-height: 45px;
+  }
+  .booking__decription {
+    margin-left: 10px;
   }
   .map {
     width: 340px;
@@ -1590,8 +1616,6 @@ template {
   .hotel {
     padding-top: 0;
     padding-bottom: 40px;
-    -webkit-transform: translateX(-4px);
-            transform: translateX(-4px);
   }
   .hotel-wrapper {
     -webkit-box-pack: justify;
@@ -1616,9 +1640,14 @@ template {
     margin-top: 10px;
     white-space: nowrap;
   }
+  .hotel-info__description--space {
+    display: none;
+  }
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+    -webkit-transform: translateX(-16px);
+            transform: translateX(-16px);
   }
   .hotel-right-wrapper {
     -webkit-box-orient: vertical;
@@ -1690,7 +1719,7 @@ template {
   }
   .hotel-swiper {
     width: 100%;
-    height: 177px;
+    height: 179px;
   }
   .hotel-swiper__button {
     background-size: 5px;
