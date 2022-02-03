@@ -2,13 +2,16 @@
     padding-top: 40px
     padding-bottom: 70px
     &-title
+        font-family: Mulish
+        font-style: normal
         font-weight: bold
-        font-size: 30px
-        line-height: 38px
+        font-size: 36px
+        line-height: 45px
         text-align: center
         text-transform: uppercase
         margin: 0
         margin-bottom: 70px
+        transform: translateX(8px)
     &-slider
         &__item
             position: relative
@@ -27,7 +30,7 @@
                 top: 13px
                 width: 70px
                 height: 47px
-                background-image: url(../../css/img/quote-left.svg)
+                background-image: url(img/quote-left.svg)
                 background-repeat: no-repeat
             &::after
                 content: ''
@@ -36,11 +39,11 @@
                 top: 118px
                 width: 70px
                 height: 47px
-                background-image: url(../../css/img/quote-right.svg)
+                background-image: url(img/quote-right.svg)
                 background-repeat: no-repeat
         &__button
             position: absolute
-            top: 50%
+            top: 46%
             transform: translateY(-50%)
             width: 30px
             height: 30px
@@ -52,11 +55,11 @@
             cursor: pointer
             z-index: 99
             &--prev
-                background-image: url(../../css/img/arrow-prev-secondary.svg)
-                left: 0
+                background-image: url(img/arrow-prev-secondary.svg)
+                left: 26px
             &--next
-                background-image: url(../../css/img/arrow-next-secondary.svg)
-                right: 0
+                background-image: url(img/arrow-next-secondary.svg)
+                right: 10px
         &__profile
             display: flex
             flex-direction: column
@@ -68,7 +71,7 @@
             height: 90px
             border-radius: 50%
             object-fit: cover
-            margin-bottom: 9px
+            margin-bottom: 8px
         &__username
             font-family: Mulish
             font-style: normal
@@ -76,20 +79,32 @@
             font-size: 12px
             line-height: 15px
             color: $primary-color
+            margin: 0
+            margin-bottom: 11px
         &__date
             font-size: 10px
             line-height: 13px
             margin-bottom: 4px
+            font-weight: 600
         &__rating
             display: flex
             align-items: center
         &__text
+            font-family: Mulish
+            font-style: normal
+            font-weight: 600
             font-size: 12px
             line-height: 160%
             text-align: justify
+            color: #333333
             margin: auto
             max-width: 537px
 .stars
     &-img
-        height: 6px
-        width: 6px
+        height: 8px
+        width: 8px
+        margin-right: 2px
+.swiper
+    &-slide
+        &-active
+            transform: translateX(9px)

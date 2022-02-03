@@ -551,7 +551,7 @@ sub {
 
 .newsletter {
   position: relative;
-  padding: 98px 0 87px 0;
+  padding: 78px 0 67px 0;
   background-image: url("../../css/img/newsletter-bg.jfif");
   background-repeat: no-repeat;
   background-size: cover;
@@ -599,6 +599,8 @@ sub {
   font-weight: 200;
   font-size: 24px;
   line-height: 30px;
+  -webkit-transform: translateX(9px);
+          transform: translateX(9px);
 }
 
 .newsletter-title__strong {
@@ -611,10 +613,12 @@ sub {
 
 .subscribe {
   position: relative;
-  width: 355px;
+  width: 350px;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
 }
 
 .subscribe__input {
@@ -669,13 +673,17 @@ sub {
 }
 
 .reviews-title {
+  font-family: Mulish;
+  font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 36px;
+  line-height: 45px;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 70px;
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
 }
 
 .reviews-slider__item {
@@ -704,7 +712,7 @@ sub {
   top: 13px;
   width: 70px;
   height: 47px;
-  background-image: url(../../css/img/quote-left.svg);
+  background-image: url(img/quote-left.svg);
   background-repeat: no-repeat;
 }
 
@@ -715,13 +723,13 @@ sub {
   top: 118px;
   width: 70px;
   height: 47px;
-  background-image: url(../../css/img/quote-right.svg);
+  background-image: url(img/quote-right.svg);
   background-repeat: no-repeat;
 }
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 46%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -736,13 +744,13 @@ sub {
 }
 
 .reviews-slider__button--prev {
-  background-image: url(../../css/img/arrow-prev-secondary.svg);
-  left: 0;
+  background-image: url(img/arrow-prev-secondary.svg);
+  left: 26px;
 }
 
 .reviews-slider__button--next {
-  background-image: url(../../css/img/arrow-next-secondary.svg);
-  right: 0;
+  background-image: url(img/arrow-next-secondary.svg);
+  right: 10px;
 }
 
 .reviews-slider__profile {
@@ -766,7 +774,7 @@ sub {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .reviews-slider__username {
@@ -776,12 +784,15 @@ sub {
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
+  margin: 0;
+  margin-bottom: 11px;
 }
 
 .reviews-slider__date {
   font-size: 10px;
   line-height: 13px;
   margin-bottom: 4px;
+  font-weight: 600;
 }
 
 .reviews-slider__rating {
@@ -794,16 +805,26 @@ sub {
 }
 
 .reviews-slider__text {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
+  color: #333333;
   margin: auto;
   max-width: 537px;
 }
 
 .stars-img {
-  height: 6px;
-  width: 6px;
+  height: 8px;
+  width: 8px;
+  margin-right: 2px;
+}
+
+.swiper-slide-active {
+  -webkit-transform: translateX(9px);
+          transform: translateX(9px);
 }
 
 .activites {
