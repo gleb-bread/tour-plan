@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <header class="navbar navbar--modile--fixed">
         <div class="container">
             <div class="navbar-top">
 
@@ -25,14 +25,14 @@
                     <img src="css/img/horisontal-logo.svg" alt="Logo: Best tour plan" class="logo__img">
                 </a>
 
-                <form action="#" class="search navbar__search">
+                <form action="#" class="search navbar__search navbar__search--mobile--hidden">
                     <input type="text" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                         <img src="css/img/search.svg" alt="Icon: search" class="search__icon">
                     </button>
                 </form>
 
-                <a href="#" class="user navbar__user">
+                <a href="#" class="user navbar__user navbar__user--mobile--hidden">
                     <img src="css/img/user-avatar.jfif" alt="Avatar: Nathan" class="avatar user__avatar">
                     <span class="user__name">Nathan</span>
                 </a>
@@ -49,6 +49,20 @@
         <div class="navbar-bottom">
             <div class="container">
                 <ul class="navbar-menu">
+                    <li class="navbar-menu__item">
+                        <a href="#" class="user navbar__user navbar__user--mobile--visible">
+                            <img src="css/img/user-avatar.jfif" alt="Avatar: Nathan" class="avatar user__avatar">
+                            <span class="user__name user__name--light">Nathan</span>
+                        </a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                            <input type="text" class="search__input" placeholder="Search Location">
+                            <button class="search__button">
+                                <img src="css/img/search.svg" alt="Icon: search" class="search__icon">
+                            </button>
+                        </form>
+                    </li>
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
@@ -270,23 +284,23 @@
             <div class="activites-wrapper">
                 <div class="card">
                     <img src="css/img/activitees-img-1.jfif" alt="The curious corner of chamarel" class="card__img">
-                    <h3 class="card__title">The curious corner of chamarel</h3>
+                    <h3 class="card__title">The curious corner</br> of chamarel</h3>
                     <button class="card__button">Book Now</button>
                 </div>
                 <div class="card">
                     <img src="css/img/activitees-img-2.jfif" alt="Gymkhana club golf course" class="card__img">
-                    <h3 class="card__title">Gymkhana club golf course</h3>
+                    <h3 class="card__title">Gymkhana club golf</br> course</h3>
                     <button class="card__button">Book Now</button>
                 </div>
                 <div class="card">
                     <img src="css/img/activitees-img-3.jfif" alt="Tamarind falls hiking trip - full day"
                         class="card__img">
-                    <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+                    <h3 class="card__title">Tamarind falls hiking</br> trip - full day</h3>
                     <button class="card__button">Book Now</button>
                 </div>
                 <div class="card">
                     <img src="css/img/activitees-img-4.jfif" alt="The blue marine discovery quest" class="card__img">
-                    <h3 class="card__title">The blue marine discovery uest</h3>
+                    <h3 class="card__title">The blue marine discovery</br> quest</h3>
                     <button class="card__button">Book Now</button>
                 </div>
             </div>
@@ -373,7 +387,7 @@
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-                    <form action="#" class="footer__form">
+                    <form action="send.php" method="post" class="footer__form">
                         <input type="text" class="input footer__input" placeholder="Your Full Name*">
                         <input type="text" class="input footer__input" placeholder="Phone Number*">
                         <textarea class="footer__message" cols="30" rows="5" placeholder="Message"></textarea>

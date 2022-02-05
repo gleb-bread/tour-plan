@@ -25,3 +25,9 @@ document.addEventListener('click', function Click(e) {
     console.log(e.target);
 });
 
+let menuBtn = document.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click', () => {
+    document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+});
+

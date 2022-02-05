@@ -1,8 +1,10 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
+    .hotel
+        &-swiper
+            width: 590px
     .swiper
-        width: 590px
         &-slide
             &__img
                 height: 100%
@@ -29,9 +31,6 @@
         width: 340px
         font-size: 12px
         line-height: 15px
-    .swiper
-        width: 100%
-        height: 450px
     .hotel
         padding-bottom: 55px
         padding-top: 23px
@@ -54,12 +53,12 @@
             height: 450px
             &__button
                 background-size: 9px
+                top: 50%
                 &--next
                     right: 16px
-                    top: 50%
                 &--prev
                     left: 16px
-                    top: 50%
+
     .booking
         width: 340px
         height: 210px
@@ -75,16 +74,83 @@
     .map
         width: 340px
     .newsletter
-        padding: 92px 0
+        padding: 73px 0
+    .reviews
+        &-slider
+            &__item
+                max-width: 579px
+                margin-top: 33px
+            &__text
+                font-family: Mulish
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 160%
+                text-align: justify
+            &__button
+                top: 51%
+                &--next
+                    right: -9px
+                &--prev
+                    left: 10px
+
+        &-title
+            font-family: Mulish
+            font-style: normal
+            font-weight: bold
+            font-size: 30px
+            line-height: 38px
+            text-align: center
+            text-transform: uppercase
+            margin-bottom: 51px
 @media (max-width: 767px)
-    .container
+    .container, .newsletter-wrapper
         max-width: 576px
         width: 92%
+    body
+        padding-top: 78px
     .navbar
-        &__search,&__user,&-bottom
-            display: none
+        &__search,&__user
+            &--mobile
+                &--hidden
+                    display: none
+                &--visible
+                    display: block
+                    align-self: center
+        &__search
+            &--mobile
+                &--visible
+                    margin: 0 auto
+                    width: 100%
+
+        &__user
+            &--mobile
+                &--visible
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+
         &-top
             padding: 28px 0
+        &--modile
+            &--fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 999
+        &-bottom
+            display: none
+            left: 0
+            right: 0
+            bottom: 0
+            top: 78px
+            &--visible
+                display: block
+        &-menu
+            flex-direction: column
+            &__item
+                margin-bottom: 20px
     .menu
         &-btn
             display: flex
@@ -142,18 +208,63 @@
         margin-bottom: 20px
     .map
         width: 100%
+    .newsletter
+        &-wrapper
+            flex-direction: column
+            align-items: flex-start
+    .reviews
+        &-slider
+            &__item
+                padding: 0 30px 30px
+                &::after, &::before
+                    display: none
+            &__text
+                font-family: Mulish
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 160%
+                text-align: justify
+            &__button
+                top: 13%
+                background-color: rgba(0,0,0,0)
+                &--prev
+                    left: 50%
+                    margin-left: -65px
+                    transform: translate(-50%, 0)
+                &--next
+                    right: 50%
+                    margin-right: -65px
+                    transform: translate(50%, 0)
+
+        &-title
+            font-family: Mulish
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            text-align: center
+            text-transform: uppercase
+            padding: 0 16px
+    .user
+        &__avatar
+            margin-right: 0
+        &__name
+            &--light
+                color: $light
 @media (max-width: 576px)
-    .container
+    .container, .newsletter-wrapper
         width: 440px
     .navbar
         &-top
             padding-top: 25px
     .logo
         width: 99px
-    .swiper
-        width: 100%
-        height: 240px
-        margin-bottom: 20px
+    .hotel
+        &-swiper
+            width: 100%
+            height: 240px
+            margin-bottom: 20px
         &-button
             background-size: 6px
             &--next
@@ -161,12 +272,30 @@
             &--prev
                 left: 6px
     .newsletter
-        padding: 76px 0 83px 20px
+        padding: 39px 0 83px 1px
         &-wrapper
             flex-direction: column
             align-items: flex-start
+        &-title
+            font-family: Mulish
+            font-style: normal
+            font-weight: 300
+            font-size: 20px
+            line-height: 25px
+            -webkit-transform: translateX(8px)
+            margin-bottom: 39px
+            margin-top: 0
+            &__strong
+                font-family: Mulish
+                font-style: normal
+                font-weight: 600
+                font-size: 30px
+                line-height: 38px
+    .subscribe
+        width: 100%
+
 @media (max-width: 480px)
-    .container
+    .container, .newsletter-wrapper
         width: 280px
     .navbar
         &-top
@@ -185,3 +314,5 @@
                 &--prev
                     left: -3px
                     top: 51%
+    .search__input
+        width: 100%
