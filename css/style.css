@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 1110px;
+  width: 1100px;
   margin: auto;
 }
 
@@ -60,7 +60,7 @@ sub {
 
 .navbar__search {
   margin-right: auto;
-  margin-left: 117px;
+  margin-left: 108px;
 }
 
 .navbar-bottom {
@@ -82,8 +82,14 @@ sub {
   padding-bottom: 31px;
   padding-left: 0;
   list-style: none;
-  -webkit-transform: translateX(9px);
-          transform: translateX(9px);
+}
+
+.navbar-menu__item:nth-child(1) {
+  display: none;
+}
+
+.navbar-menu__item:nth-child(2) {
+  display: none;
 }
 
 .navbar-menu__link {
@@ -96,13 +102,12 @@ sub {
 
 .logo {
   width: 177px;
+  margin-left: 3px;
 }
 
 .logo__img {
   margin: 0;
   padding: 0;
-  -webkit-transform: translateX(8px);
-          transform: translateX(8px);
 }
 
 .search {
@@ -143,8 +148,6 @@ sub {
 .search__icon {
   width: 16px;
   height: 16px;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
 }
 
 .user {
@@ -156,8 +159,6 @@ sub {
           align-items: center;
   text-decoration: none;
   right: 50%;
-  -webkit-transform: translateX(-51%);
-          transform: translateX(-51%);
   margin-right: -63px;
 }
 
@@ -174,8 +175,7 @@ sub {
   color: #333333;
   font-size: 14px;
   line-height: 18px;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  margin-right: 50px;
 }
 
 .navbar__user--mobile--visible, .navbar__search--mobile--visible {
@@ -214,8 +214,6 @@ sub {
 .hotel {
   padding-top: 24px;
   padding-bottom: 70px;
-  -webkit-transform: translateX(8px);
-          transform: translateX(8px);
 }
 
 .hotel-info {
@@ -229,6 +227,7 @@ sub {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 20px;
+  margin-left: 4px;
 }
 
 .hotel-info__offer {
@@ -287,16 +286,16 @@ sub {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-right: -13px;
 }
 
 .hotel-swiper {
-  width: 729px;
+  width: 728px;
   height: 450px;
   position: relative;
   border-radius: 8px;
   margin: 0;
-  -webkit-transform: translateX(2px);
-          transform: translateX(2px);
+  margin-left: 5px;
 }
 
 .hotel-swiper__item {
@@ -379,6 +378,7 @@ sub {
   background-color: #EC1F46;
   border-radius: 4px;
   overflow: hidden;
+  margin-right: -14px;
 }
 
 .rating-text {
@@ -439,8 +439,6 @@ sub {
   font-weight: 200;
   font-size: 10px;
   line-height: 14px;
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
 }
 
 .booking__pricetag {
@@ -449,8 +447,6 @@ sub {
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
 }
 
 .booking__per-room {
@@ -459,14 +455,10 @@ sub {
   font-weight: 200;
   font-size: 12px;
   line-height: 16px;
-  -webkit-transform: translateX(2px);
-          transform: translateX(2px);
 }
 
 .booking__room {
   margin-top: 4px;
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
 }
 
 .booking__decription {
@@ -510,8 +502,6 @@ sub {
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  -webkit-transform: translateX(3px);
-          transform: translateX(3px);
 }
 
 .booking__number {
@@ -607,8 +597,7 @@ sub {
   font-weight: 200;
   font-size: 24px;
   line-height: 30px;
-  -webkit-transform: translateX(9px);
-          transform: translateX(9px);
+  margin-left: 9px;
 }
 
 .newsletter-title__strong {
@@ -625,8 +614,7 @@ sub {
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
-  -webkit-transform: translateX(8px);
-          transform: translateX(8px);
+  margin-right: -8px;
 }
 
 .subscribe__input {
@@ -690,8 +678,7 @@ sub {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 70px;
-  -webkit-transform: translateX(8px);
-          transform: translateX(8px);
+  margin-left: 15px;
 }
 
 .reviews-slider__item {
@@ -754,12 +741,12 @@ sub {
 
 .reviews-slider__button--prev {
   background-image: url(img/arrow-prev-secondary.svg);
-  left: 26px;
+  left: 4px;
 }
 
 .reviews-slider__button--next {
   background-image: url(img/arrow-next-secondary.svg);
-  right: 10px;
+  right: 4px;
 }
 
 .reviews-slider__profile {
@@ -832,8 +819,7 @@ sub {
 }
 
 .reviews-slider {
-  -webkit-transform: translateX(9px);
-          transform: translateX(9px);
+  margin-left: 17px;
 }
 
 .activites {
@@ -848,8 +834,6 @@ sub {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 57px;
-  -webkit-transform: translateX(9px);
-          transform: translateX(9px);
 }
 
 .activites-wrapper {
@@ -878,8 +862,6 @@ sub {
   padding: 24px 26px;
   border-radius: 6px;
   overflow: hidden;
-  -webkit-transform: translateX(8px);
-          transform: translateX(8px);
 }
 
 .activites .card::before {
@@ -912,8 +894,6 @@ sub {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  -webkit-transform: translateX(1px);
-          transform: translateX(1px);
 }
 
 .activites .card__button {
@@ -955,12 +935,11 @@ sub {
 .footer-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(min-content, 1fr))[4];
-      grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
-      grid-template-columns: repeat(4, minmax(min-content, 1fr));
-  grid-gap: 20px;
-  grid-auto-rows: minmax(40px, -webkit-min-content);
-  grid-auto-rows: minmax(40px, min-content);
+  -ms-grid-columns: (minmax(267px, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(267px, 1fr));
+  grid-gap: 16px 20px;
+  grid-auto-rows: minmax(46px, -webkit-min-content);
+  grid-auto-rows: minmax(46px, min-content);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -975,8 +954,6 @@ sub {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
 }
 
 .footer__categories {
@@ -995,6 +972,7 @@ sub {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-top: 8px;
 }
 
 .footer__social-links {
@@ -1010,6 +988,10 @@ sub {
           justify-content: space-between;
 }
 
+.footer__formation {
+  margin-left: 57px;
+}
+
 .footer__contact-details {
   grid-column: span 2;
 }
@@ -1017,6 +999,7 @@ sub {
 .footer__contact-form {
   grid-column: span 2;
   margin-bottom: 102px;
+  max-width: 539px;
 }
 
 .footer__form {
@@ -1072,7 +1055,12 @@ sub {
 }
 
 .footer__title--mb-3 {
-  margin-bottom: 22px;
+  margin-bottom: 26px;
+  margin-top: 12px;
+}
+
+.footer__title--mb-4 {
+  margin-bottom: 34px;
 }
 
 .footer__input {
@@ -1100,6 +1088,7 @@ sub {
       flex-basis: 100%;
   margin-bottom: 23px;
   resize: none;
+  min-height: 123px;
 }
 
 .footer__button {
@@ -1153,6 +1142,7 @@ sub {
 
 .footer__item--mr-1 {
   margin-right: 15px;
+  font-size: 11px;
 }
 
 .modal__overlay {
@@ -1623,6 +1613,10 @@ template {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .card {
+    max-width: 215px;
+    max-height: 215px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1672,8 +1666,6 @@ template {
   }
   .hotel-swiper {
     margin-bottom: 30px;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
   }
   .hotel-right-wrapper {
     -webkit-box-orient: horizontal;
@@ -1749,6 +1741,20 @@ template {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 51px;
+  }
+  .reviews-slider__profile {
+    margin-top: -33px;
+  }
+  .card {
+    min-width: 339px;
+    min-height: 255px;
+  }
+  .activites-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activites__card {
+    margin-bottom: 20px;
   }
 }
 
@@ -1834,8 +1840,6 @@ template {
     border: none;
     cursor: pointer;
     right: 9px;
-    -webkit-transform: translateX(9px);
-            transform: translateX(9px);
     margin-top: 4px;
   }
   .menu-btn__line {
@@ -1879,8 +1883,6 @@ template {
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
-    -webkit-transform: translateX(-16px);
-            transform: translateX(-16px);
   }
   .hotel-right-wrapper {
     -webkit-box-orient: vertical;
@@ -1924,7 +1926,7 @@ template {
     text-align: justify;
   }
   .reviews-slider__button {
-    top: 13%;
+    top: 6%;
     background-color: rgba(0, 0, 0, 0);
   }
   .reviews-slider__button--prev {
@@ -1954,6 +1956,10 @@ template {
   }
   .user__name--light {
     color: #fff;
+  }
+  .card {
+    min-width: 100%;
+    min-height: 255px;
   }
 }
 
@@ -1999,7 +2005,6 @@ template {
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
-    -webkit-transform: translateX(8px);
     margin-bottom: 39px;
     margin-top: 0;
   }

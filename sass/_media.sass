@@ -9,6 +9,9 @@
             &__img
                 height: 100%
                 object-fit: cover
+    .card
+        max-width: 215px
+        max-height: 215px
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -44,7 +47,6 @@
             flex-direction: column
         &-swiper
             margin-bottom: 30px
-            transform: translateX(0px)
         &-right-wrapper
             flex-direction: row
             justify-content: space-between
@@ -103,6 +105,18 @@
             text-align: center
             text-transform: uppercase
             margin-bottom: 51px
+    .reviews
+        &-slider
+            &__profile
+                margin-top: -33px
+    .card
+        min-width: 339px
+        min-height: 255px
+    .activites
+        &-wrapper
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px
 @media (max-width: 767px)
     .container, .newsletter-wrapper
         max-width: 576px
@@ -163,7 +177,6 @@
             border: none
             cursor: pointer
             right: 9px
-            transform: translateX(9px)
             margin-top: 4px
             &__line
                 width: 16px
@@ -194,7 +207,6 @@
                     display: none
     .stars
         flex-basis: auto
-        transform: translateX(-16px)
 
     .hotel
         &-right-wrapper
@@ -226,7 +238,7 @@
                 line-height: 160%
                 text-align: justify
             &__button
-                top: 13%
+                top: 6%
                 background-color: rgba(0,0,0,0)
                 &--prev
                     left: 50%
@@ -236,7 +248,6 @@
                     right: 50%
                     margin-right: -65px
                     transform: translate(50%, 0)
-
         &-title
             font-family: Mulish
             font-style: normal
@@ -252,6 +263,9 @@
         &__name
             &--light
                 color: $light
+    .card
+        min-width: 100%
+        min-height: 255px
 @media (max-width: 576px)
     .container, .newsletter-wrapper
         width: 440px
@@ -282,7 +296,6 @@
             font-weight: 300
             font-size: 20px
             line-height: 25px
-            -webkit-transform: translateX(8px)
             margin-bottom: 39px
             margin-top: 0
             &__strong
